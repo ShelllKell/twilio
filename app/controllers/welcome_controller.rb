@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
 
   end
 
-  def create_text
+  def create
     if params[:message]
       Texter.new.send_text(params[:message])
       redirect_to root_path
