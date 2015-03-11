@@ -1,0 +1,8 @@
+<h4>Send a Text:</h4>
+
+  <%= form_tag '/text' do %>
+  <%= label_tag("Message") %>
+  <%= text_field_tag(:message) %>
+  <%= submit_tag "Send message" %>
+
+  <% end %>
